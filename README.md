@@ -1,5 +1,36 @@
 # Customer & Sales Analytics | MySQL Data Analytics Portfolio
 
+## 📌 Project Highlights
+
+| Business Area | Analysis |
+|---|---|
+| Customer Analytics | Customer value, segmentation, retention |
+| Sales Analytics | Revenue, AOV, order trends |
+| Product Analytics | Product revenue and sales performance |
+| Inventory Analytics | Stock risk and demand |
+| Customer Satisfaction | Ratings and low-satisfaction products |
+| Data Quality | Missing values, duplicates, invalid formats |
+| Advanced SQL | Window functions, subqueries, REGEXP |
+
+## 🔎 Key SQL Techniques
+
+- JOINs
+- LEFT JOIN
+- GROUP BY
+- HAVING
+- Subqueries
+- Window Functions
+- ROW_NUMBER
+- RANK
+- DENSE_RANK
+- LAG
+- LEAD
+- CASE
+- REGEXP
+- REGEXP_REPLACE
+- Date Functions
+- Aggregations
+  
 ## 📊 Project Overview
 
 This project demonstrates an end-to-end SQL analytics workflow using MySQL to analyze customer orders, products, inventory, customer reviews, and employee data.
