@@ -82,3 +82,29 @@ WHERE total_money_spent >
     FROM customers
 )
 ORDER BY total_money_spent DESC;
+
+
+-- ============================================================
+-- 10. CTE: Customers Spending Above Average
+-- Business Question:
+-- Which customers have total spending above the average
+-- customer spending level?
+-- ============================================================
+
+WITH customer_revenue AS (
+    SELECT
+        customer_id,
+        SUM(order_total) AS total_revenue
+    FROM customer_orders
+    GROUP BY customer_id
+)
+
+SELECT
+    customer_id,
+    ROUND(total_revenue, 2) AS total_revenue
+FROM customer_revenue
+WHERE total_revenue > (
+    SELECT AVG(total_revenue)
+    FROM customer_revenue
+)
+ORDER BY total_revenue DESC;
