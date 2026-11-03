@@ -158,3 +158,17 @@ The analysis is designed to support business decisions around:
 ## Project Status
 
 Completed SQL analysis with ongoing refinement of business insights and documentation.
+
+-----
+SQL Data Cleaning,
+Data Quality Assurance,
+Data Validation,
+NULL Handling,
+Duplicate Detection,
+Data Standardization,
+Exploratory Data Analysis (EDA),
+Relational Database Analysis,
+Reproducible Analytics,
+Data Integrity,
+Business Intelligence,
+Analytical Reporting
