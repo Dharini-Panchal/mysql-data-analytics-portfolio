@@ -1,174 +1,72 @@
-# Customer & Sales Analytics | MySQL
+# MySQL Data Analytics Portfolio: Retail Operations
 
-## Business Case
+A SQL-based analytics project exploring retail sales, customer behaviour, product performance, inventory, and customer satisfaction using MySQL.
 
-A retail organization wants to understand customer purchasing behaviour, sales performance, product performance, inventory risk, and customer satisfaction.
+## Business Objective
 
-The objective of this analysis is to transform transactional and customer data into actionable insights that can support revenue growth, customer retention, inventory planning, and operational decision-making.
+How can retail data help a business understand sales performance, identify inventory concerns, evaluate customer behaviour, and prioritize areas for further investigation?
+
+This project uses structured SQL queries to examine these questions and translate the analysis into potential business recommendations.
+
+## Tools and Technical Skills
+
+* **Database:** MySQL
+* **Querying:** SELECT, WHERE, GROUP BY, HAVING, JOINs, subqueries, and Common Table Expressions (CTEs)
+* **Advanced SQL:** Window functions, ranking, LAG, aggregations, and comparative analysis
+* **Data Quality:** Missing-value checks, duplicate checks, format validation, and anomaly investigation
+* **Documentation:** KPI definitions, data quality reporting, cleaning decisions, and business insights
+
+*Only retain skills that are demonstrated in the SQL files in this repository.*
+
+## Project Workflow
+
+1. **Data profiling:** Examine table structure, record counts, date ranges, and key metrics.
+2. **Data quality assessment:** Investigate missing values, duplicates, invalid formats, and unusual values.
+3. **Cleaning validation:** Document cleaning decisions and validate the resulting data.
+4. **Exploratory analysis:** Examine customer, sales, product, and satisfaction patterns.
+5. **Advanced SQL analysis:** Use CTEs and window functions for customer comparisons, rankings, and changes over time.
+6. **Business insights:** Identify patterns and potential priorities for management to investigate.
+7. **Documentation:** Record assumptions, KPIs, limitations, and recommendations.
 
 ## Business Questions
 
-This analysis answers questions such as:
-
-* What are the organization's key sales KPIs?
-* Which customers generate the most revenue?
+* Which customers contribute the most recorded spending?
+* How do order values change over time?
 * Which products generate the most revenue?
-* Which products have high sales but low inventory?
-* Which products have poor customer satisfaction?
-* Which customers are high-value?
-* Which customers have high spending but low satisfaction?
-* Which customers have stopped or reduced purchasing?
-* How does customer spending vary across segments?
-* Which products require further investigation?
-* Where are potential data-quality issues?
+* Which products may need inventory review?
+* Which products have lower customer satisfaction ratings?
+* How concentrated is recorded revenue among customers?
+* What should management investigate based on the analysis?
 
-## Data Sources
+## Repository Guide
 
-The analysis uses the following MySQL tables:
+| Folder or file   | Purpose                                                                            |
+| ---------------- | ---------------------------------------------------------------------------------- |
+| `sql/`           | SQL profiling, quality checks, analysis, and business insight queries              |
+| `documentation/` | Data model, KPI framework, cleaning decisions, setup instructions, and methodology |
+| `results/`       | Query outputs and executive summary                                                |
+| `data/`          | Dataset files or data-related documentation, as included in the repository         |
 
-| Table                      | Business Purpose                            |
-| -------------------------- | ------------------------------------------- |
-| `customers`                | Customer demographics and lifetime spending |
-| `customer_orders`          | Customer transaction/order information      |
-| `customer_orders_review`   | Customer product ratings                    |
-| `products`                 | Product pricing and inventory               |
-| `ordered_items`            | Product-level order quantities and prices   |
-| `suppliers`                | Supplier information                        |
-| `supplier_delivery_status` | Delivery/order status information           |
-| `employees`                | Employee and compensation information       |
+## How to Explore the Project
 
-## Analytical Workflow
+1. Review `results/executive_summary.md` for the main analytical overview.
+2. Read `documentation/kpi_framework.md` to understand the metrics.
+3. Review `documentation/data_quality_report.md` and `documentation/cleaning_decision_log.md`.
+4. Follow `documentation/database_setup.md` for setup requirements and the recommended execution order.
+5. Explore the numbered SQL files in `sql/` to review the queries.
 
-```text
-Operational Data
-       ↓
-Data Profiling
-       ↓
-Data Quality Checks
-       ↓
-Data Cleaning
-       ↓
-KPI Analysis
-       ↓
-Customer Analysis
-       ↓
-Sales Analysis
-       ↓
-Product Analysis
-       ↓
-Inventory Analysis
-       ↓
-Customer Satisfaction
-       ↓
-Advanced SQL Analysis
-       ↓
-Business Insights
-       ↓
-Recommendations
-```
+## Important Limitations
 
-## SQL Techniques
+* Findings depend on the available dataset and its quality.
+* Unusual records are not automatically errors.
+* Thresholds used to flag inventory or satisfaction concerns are analytical assumptions, not universal business standards.
+* Potential customer-retention concerns require further evidence and should not be treated as confirmed churn.
+* Recommendations are proposed actions for investigation, not evidence of implemented business changes.
 
-The project demonstrates:
+## About This Project
 
-* SELECT
-* WHERE
-* ORDER BY
-* GROUP BY
-* HAVING
-* Aggregate functions
-* CASE
-* IF
-* Date functions
-* String functions
-* INNER JOIN
-* LEFT JOIN
-* Self JOIN
-* UNION
-* Subqueries
-* Window functions
-* ROW_NUMBER()
-* RANK()
-* DENSE_RANK()
-* LAG()
-* LEAD()
-* PARTITION BY
-* OVER()
-* REGEXP
-* ROLLUP
+This is an independent portfolio project demonstrating practical SQL analysis, data quality assessment, analytical reasoning, and business-oriented documentation.
 
-## Key Analytical Areas
+**GitHub:** [Dharini-Panchal](https://github.com/Dharini-Panchal)
 
-### Customer Analytics
-
-* Customer lifetime spending
-* Revenue by customer
-* High-value customer identification
-* Customer segmentation
-* Repeat purchasing behaviour
-* Customer satisfaction
-
-### Sales Analytics
-
-* Total revenue
-* Average order value
-* Order volume
-* Revenue trends
-* Revenue contribution
-* Top-performing orders
-
-### Product Analytics
-
-* Product revenue
-* Units sold
-* Product rankings
-* Product pricing
-* Low-performing products
-
-### Inventory Analytics
-
-* Current inventory
-* Units sold
-* High-sales/low-inventory products
-* Potential stock-out risk
-
-### Customer Satisfaction
-
-* Average rating
-* Low-rated products
-* Rating distribution
-* High-spending customers with low satisfaction
-
-## Business Value
-
-The analysis is designed to support business decisions around:
-
-* Customer retention
-* Revenue growth
-* Product prioritization
-* Inventory planning
-* Customer experience
-* Data quality
-* Operational efficiency
-
-## Tools
-
-**MySQL | SQL | GitHub | Data Analytics | Exploratory Data Analysis**
-
-## Project Status
-
-Completed SQL analysis with ongoing refinement of business insights and documentation.
-
------
-SQL Data Cleaning,
-Data Quality Assurance,
-Data Validation,
-NULL Handling,
-Duplicate Detection,
-Data Standardization,
-Exploratory Data Analysis (EDA),
-Relational Database Analysis,
-Reproducible Analytics,
-Data Integrity,
-Business Intelligence,
-Analytical Reporting
+**LinkedIn:** [Dharini Panchal](https://www.linkedin.com/in/dharini-panchal/)
