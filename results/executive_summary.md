@@ -52,7 +52,29 @@ The analysis investigates:
 * Which business areas require further investigation?
 
 ---
+## Key Findings
 
+The following findings will be documented using verified results from the SQL analysis.
+
+### 1. Customer Revenue Contribution
+
+* **Finding:** To be completed using the customer spending and revenue concentration query results.
+* **Business implication:** Understand how much recorded revenue comes from the highest-spending customers.
+* **Limitation:** High spending alone does not establish future loyalty or retention risk.
+
+### 2. Product and Inventory Performance
+
+* **Finding:** To be completed using the product revenue ranking and inventory analysis results.
+* **Business implication:** Identify products that may need inventory review or further sales analysis.
+* **Limitation:** Low stock alone does not prove a stockout or lost sale.
+
+### 3. Customer Satisfaction
+
+* **Finding:** To be completed using the customer review and satisfaction analysis results.
+* **Business implication:** Identify products or customer experience areas that may warrant investigation.
+* **Limitation:** Ratings alone do not establish the cause of dissatisfaction.
+
+---
 ## SQL & Data Analytics Skills Demonstrated
 
 ### SQL
